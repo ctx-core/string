@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "4.3.7",
+	"version": "4.3.8",
 	"description": "ctx-core string",
 	"main": "lib.js",
 	"module": "lib.js",
