@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 6.0.0
+
+### Major Changes
+
+- src directory
+
 ## 5.0.5
 
 ### Patch Changes
