@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 6.1.1
+
+### Patch Changes
+
+- fix: case_insensitive_eql: nullish arguments
+
 ## 6.1.0
 
 ### Minor Changes
