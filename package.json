@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "6.0.0",
+	"version": "6.1.0",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -31,5 +31,8 @@
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"dependencies": {
+		"@ctx-core/array": "workspace:^20.0.1"
 	}
 }

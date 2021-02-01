@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 6.1.0
+
+### Minor Changes
+
+- case_insensitive_eql
+
 ## 6.0.0
 
 ### Major Changes

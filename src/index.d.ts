@@ -1,5 +1,6 @@
 export * from './_acronym';
 export * from './_title_case';
+export * from './case_insensitive_eql';
 export * from './chars';
 export * from './indendation';
 export * from './isLowerCase';
