@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 6.1.4
+
+### Patch Changes
+
+- fix: load \_wrap_a1 from @ctx-core/function
+
 ## 6.1.3
 
 ### Patch Changes
