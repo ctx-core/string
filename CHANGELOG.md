@@ -1,5 +1,12 @@
 # @ctx-core/string
 
+## 6.1.3
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.1.0
+
 ## 6.1.2
 
 ### Patch Changes
