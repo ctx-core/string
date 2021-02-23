@@ -1,5 +1,12 @@
 # @ctx-core/string
 
+## 6.1.12
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/function@17.3.5
+
 ## 6.1.11
 
 ### Patch Changes
