@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "6.1.15",
+	"version": "6.1.16",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -22,7 +22,7 @@
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
-		"compile": "./node_modules/.bin/tsc -b",
+		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
 		"prepublishOnly": "npm run compile"
 	},
@@ -33,6 +33,6 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@ctx-core/function": "workspace:^17.4.1"
+		"@ctx-core/function": "workspace:^17.4.2"
 	}
 }
