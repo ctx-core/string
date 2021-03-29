@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 6.1.17
+
+### Patch Changes
+
+- fix: npm publish: https://github.com/npm/cli/issues/2834
+- Updated dependencies [undefined]
+  - @ctx-core/function@17.4.3
+
 ## 6.1.16
 
 ### Patch Changes
