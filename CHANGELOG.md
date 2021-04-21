@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 6.1.21
+
+### Patch Changes
+
+- update dependencies
+
 ## 6.1.20
 
 ### Patch Changes
