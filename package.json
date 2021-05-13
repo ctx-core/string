@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "6.1.31",
+	"version": "6.1.32",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -34,6 +34,6 @@
 		"cache": "~/.npm"
 	},
 	"dependencies": {
-		"@ctx-core/function": "workspace:^17.8.2"
+		"@ctx-core/function": "workspace:^17.8.3"
 	}
 }
