@@ -1,3 +1,3 @@
-export function isLowerCase(word) {
+export function isLowerCase(word:string) {
 	return word === word.toLowerCase()
 }

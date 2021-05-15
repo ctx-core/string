@@ -1,4 +1,3 @@
-export declare function _indentation(count__indent: any, indent?: string): string;
-export declare const $indentation: typeof _indentation;
-export declare function _regexp__indentation(spaces: any): RegExp;
-export declare const $regexp__indentation: typeof _regexp__indentation;
+export declare function _indentation(indent_count: number, indent?: string): string;
+export declare function _indentation_regexp(spaces: number): RegExp;
+export { _indentation as $indentation, _indentation_regexp as _regexp__indentation, _indentation_regexp as $regexp__indentation, };

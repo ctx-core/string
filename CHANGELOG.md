@@ -1,5 +1,16 @@
 # @ctx-core/string
 
+## 6.2.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/function@17.9.0
+
 ## 6.1.34
 
 ### Patch Changes

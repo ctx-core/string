@@ -1,3 +1,3 @@
-export function isUpperCase(word) {
+export function isUpperCase(word:string) {
 	return word === word.toUpperCase()
 }

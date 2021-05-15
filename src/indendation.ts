@@ -1,9 +1,12 @@
-export function _indentation(count__indent, indent='	') {
-	return new Array(count__indent + 1).join(indent)
+export function _indentation(indent_count:number, indent = '	') {
+	return new Array(indent_count + 1).join(indent)
 }
-export const $indentation = _indentation
-export function _regexp__indentation(spaces) {
+export function _indentation_regexp(spaces:number) {
 	const regexpSource = '^' + _indentation(spaces)
 	return new RegExp(regexpSource, 'gm')
 }
-export const $regexp__indentation = _regexp__indentation
+export {
+	_indentation as $indentation,
+	_indentation_regexp as _regexp__indentation,
+	_indentation_regexp as $regexp__indentation,
+}

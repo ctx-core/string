@@ -1,5 +1,5 @@
 export function splice_str(
-	str: string, idx = str.length, rem = 0, add?
+	str:string, idx = str.length, rem = 0, add?:string
 ) {
 	return (str.slice(0, idx) + (add || '') + str.slice(idx + Math.abs(rem)))
 }

@@ -1,1 +1,1 @@
-export declare function isUpperCase(word: any): boolean;
+export declare function isUpperCase(word: string): boolean;

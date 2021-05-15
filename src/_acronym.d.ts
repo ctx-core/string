@@ -1,1 +1,1 @@
-export declare function _acronym(string: any): any;
+export declare function _acronym(string: string): string;
