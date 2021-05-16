@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 6.2.1
+
+### Patch Changes
+
+- fix: target: 2018: nodejs compatability
+- Updated dependencies [undefined]
+  - @ctx-core/function@17.9.1
+
 ## 6.2.0
 
 ### Minor Changes
