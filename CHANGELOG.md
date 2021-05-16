@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 6.2.4
+
+### Patch Changes
+
+- .npmignore: + ~
+- Updated dependencies [undefined]
+  - @ctx-core/function@17.9.2
+
 ## 6.2.3
 
 ### Patch Changes
