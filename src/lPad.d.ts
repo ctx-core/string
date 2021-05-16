@@ -1,1 +1,1 @@
-export declare function lPad(str: string, padString: string, length: number): string;
+export declare function lPad(str: any, padString: string, length: number): any;

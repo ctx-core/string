@@ -1,4 +1,4 @@
-export function rPad(str:string, padString:string, length:number) {
+export function rPad(str:any, padString:string, length:number) {
 	let str2 = str.toString()
 	while (str2.length < length)
 		str2 = str2 + padString

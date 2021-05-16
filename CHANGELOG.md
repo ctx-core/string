@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 6.2.2
+
+### Patch Changes
+
+- fix: lPad,rPad: str:any
+
 ## 6.2.1
 
 ### Patch Changes
