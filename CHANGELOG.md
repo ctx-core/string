@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 6.2.3
+
+### Patch Changes
+
+- remove ~ from npm package
+
 ## 6.2.2
 
 ### Patch Changes
