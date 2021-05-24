@@ -1,5 +1,16 @@
 # @ctx-core/string
 
+## 6.3.0
+
+### Minor Changes
+
+- dist,types directory: addressing typescript build issues
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/function@17.10.0
+
 ## 6.2.5
 
 ### Patch Changes
