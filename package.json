@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "6.2.4",
+	"version": "6.2.5",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -18,7 +18,7 @@
 	"author": "Brian Takita",
 	"main": "./src/index.js",
 	"module": "./src/index.js",
-	"types": "./src/index.ts",
+	"types": "./src/index.d.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
@@ -34,6 +34,6 @@
 		"cache": "~/.npm"
 	},
 	"dependencies": {
-		"@ctx-core/function": "workspace:^17.9.2"
+		"@ctx-core/function": "workspace:^17.9.3"
 	}
 }
