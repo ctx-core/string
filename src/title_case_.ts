@@ -1,4 +1,4 @@
-export function _title_case(str:string) {
+export function title_case_(str:string) {
 	const title_case =
 		str == null
 		? ''
@@ -9,7 +9,8 @@ export function _title_case(str:string) {
 	return title_case
 }
 export {
-	_title_case as titleCase,
-	_title_case as toTitleCase,
-	_title_case as titleCase__string,
+	title_case_ as _title_case,
+	title_case_ as titleCase,
+	title_case_ as toTitleCase,
+	title_case_ as titleCase__string,
 }

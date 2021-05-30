@@ -3,6 +3,8 @@ export function splice_str(
 ) {
 	return (str.slice(0, idx) + (add || '') + str.slice(idx + Math.abs(rem)))
 }
-export const splice_string = splice_str
-export const splice__str = splice_str
-export const splice__string = splice_str
+export {
+	splice_str as splice_string,
+	splice_str as splice__str,
+	splice_str as splice__string,
+}

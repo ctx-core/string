@@ -1,5 +1,5 @@
-export * from './_acronym'
-export * from './_title_case'
+export * from './acronym_'
+export * from './title_case_'
 export * from './case_insensitive_eql'
 export * from './chars'
 export * from './indendation'

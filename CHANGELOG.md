@@ -1,5 +1,18 @@
 # @ctx-core/string
 
+## 7.0.0
+
+### Major Changes
+
+- \$ suffix for stores
+- \_ suffix for factory functions
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/function@18.0.0
+
 ## 6.4.1
 
 ### Patch Changes
@@ -295,7 +308,7 @@
 
 ### Patch Changes
 
-- fix: load \_wrap_a1 from @ctx-core/function
+- fix: load \wrap*a* from @ctx-core/function
 
 ## 6.1.3
 
