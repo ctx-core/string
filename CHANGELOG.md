@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 7.0.2
+
+### Patch Changes
+
+- update dependencies
+
 ## 7.0.1
 
 ### Patch Changes
