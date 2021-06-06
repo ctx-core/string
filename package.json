@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "7.0.3",
+	"version": "7.0.4",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -21,7 +21,7 @@
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo",
+		"clean": "rm -f tsconfig.tsbuildinfo && rm -f dist/**/*.js && rm -f dist/**/*.d.ts && rm -f dist/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
 		"prepublishOnly": "npm run compile"
@@ -34,6 +34,6 @@
 		"cache": "~/.npm"
 	},
 	"dependencies": {
-		"@ctx-core/function": "workspace:^18.1.1"
+		"@ctx-core/function": "workspace:^18.1.2"
 	}
 }
