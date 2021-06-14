@@ -1,5 +1,16 @@
 # @ctx-core/string
 
+## 8.0.0
+
+### Major Changes
+
+- move from dist to src directory
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/function@19.0.0
+
 ## 7.0.5
 
 ### Patch Changes
