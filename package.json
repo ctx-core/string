@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "8.0.3",
+	"version": "8.0.4",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -21,7 +21,7 @@
 	"types": "./src/index.d.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo && rm -f dist/**/*.js && rm -f dist/**/*.d.ts && rm -f dist/**/*.map",
+		"clean": "rm -f tsconfig.tsbuildinfo && rm -f src/**/*.js && rm -f src/**/*.d.ts && rm -f src/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
 		"prepublishOnly": "npm run compile"
@@ -34,6 +34,6 @@
 		"cache": "~/.npm"
 	},
 	"dependencies": {
-		"@ctx-core/function": "workspace:^19.1.2"
+		"@ctx-core/function": "workspace:^19.1.3"
 	}
 }
