@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 8.0.8
+
+### Patch Changes
+
+- "prepublishOnly": "npm run clean && npm run compile"
+- Updated dependencies [undefined]
+  - @ctx-core/function@19.1.7
+
 ## 8.0.7
 
 ### Patch Changes
