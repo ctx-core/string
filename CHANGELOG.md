@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 8.0.14
+
+### Patch Changes
+
+- update dependencies
+
 ## 8.0.13
 
 ### Patch Changes
