@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 9.0.5
+
+### Patch Changes
+
+- fix: index.cjs: module.exports = require('./index.js')
+- Updated dependencies [undefined]
+  - @ctx-core/function@20.0.6
+
 ## 9.0.4
 
 ### Patch Changes
