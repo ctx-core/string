@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 9.0.11
+
+### Patch Changes
+
+- fix: "exports": "./package.json": "./package.json"
+- Updated dependencies [undefined]
+  - @ctx-core/function@20.0.12
+
 ## 9.0.10
 
 ### Patch Changes
