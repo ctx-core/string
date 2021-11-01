@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 9.0.20
+
+### Patch Changes
+
+- typescript: ^4.4.3 -> ^4.4.4
+- Updated dependencies [undefined]
+  - @ctx-core/function@20.2.2
+
 ## 9.0.19
 
 ### Patch Changes
