@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 9.0.21
+
+### Patch Changes
+
+- compile using swc
+- Updated dependencies
+  - @ctx-core/function@20.2.3
+
 ## 9.0.20
 
 ### Patch Changes
