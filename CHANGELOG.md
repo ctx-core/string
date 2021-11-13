@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 9.0.22
+
+### Patch Changes
+
+- @swc/core: ^1.2.107 -> ^1.2.108
+- Updated dependencies
+  - @ctx-core/function@20.2.4
+
 ## 9.0.21
 
 ### Patch Changes
