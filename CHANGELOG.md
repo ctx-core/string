@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 9.0.30
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+
 ## 9.0.29
 
 ### Patch Changes
