@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 9.0.31
+
+### Patch Changes
+
+- package.json: - module
+
 ## 9.0.30
 
 ### Patch Changes
