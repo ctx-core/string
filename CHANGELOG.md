@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 9.0.34
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+- Updated dependencies
+  - @ctx-core/function@20.2.15
+
 ## 9.0.33
 
 ### Patch Changes
