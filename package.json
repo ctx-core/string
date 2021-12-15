@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "9.0.31",
+	"version": "9.0.32",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -32,7 +32,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/function": "workspace:^20.2.12"
+		"@ctx-core/function": "workspace:^20.2.13"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
@@ -43,5 +43,6 @@
 	"publishConfig": {
 		"access": "public",
 		"cache": "~/.npm"
-	}
+	},
+	"svelte": "./dist/index.js"
 }
