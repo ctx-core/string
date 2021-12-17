@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "9.0.37",
+	"version": "9.0.38",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -35,7 +35,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/function": "workspace:^20.2.18"
+		"@ctx-core/function": "workspace:^20.2.19"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
