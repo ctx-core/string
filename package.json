@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "9.0.39",
+	"version": "9.0.40",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -27,7 +27,7 @@
 	"scripts": {
 		"build": "npm run compile",
 		"clean": "rimraf lib && npm run clean:tsbuildinfo",
-		"clean:tsbuildinfo": "rm -f tsconfig.tsbuildinfo && rm -f lib/**/*.d.ts",
+		"clean:tsbuildinfo": "rimraf tsconfig.tsbuildinfo && rimraf lib/**/*.d.ts",
 		"compile": "npm run compile:source && npm run compile:declaration",
 		"compile:source": "swc src --out-dir lib --copy-files --source-maps --config-file .swcrc",
 		"compile:declaration": "npm run clean:tsbuildinfo && tsc --declaration --emitDeclarationOnly --declarationDir lib",
@@ -35,7 +35,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/function": "workspace:^20.2.20"
+		"@ctx-core/function": "workspace:^20.2.21"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",

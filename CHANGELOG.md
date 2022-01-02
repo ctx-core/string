@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 9.0.40
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+- Updated dependencies
+  - @ctx-core/function@20.2.21
+
 ## 9.0.39
 
 ### Patch Changes
