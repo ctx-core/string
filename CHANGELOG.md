@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.0.0
+
+### Major Changes
+
+- extracted @ctx-core/string/chars for better tree-shaking
+
 ## 9.0.43
 
 ### Patch Changes
