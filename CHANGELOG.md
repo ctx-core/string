@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 9.0.43
+
+### Patch Changes
+
+- sideEffects = false
+- Updated dependencies
+  - @ctx-core/function@20.2.25
+
 ## 9.0.42
 
 ### Patch Changes
