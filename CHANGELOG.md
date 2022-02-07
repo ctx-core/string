@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.0.1
+
+### Patch Changes
+
+- update dependencies
+
 ## 10.0.0
 
 ### Major Changes
