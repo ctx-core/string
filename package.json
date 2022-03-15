@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "10.0.2",
+	"version": "10.0.3",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -21,9 +21,6 @@
 	"exports": {
 		".": {
 			"import": "./lib/index.js"
-		},
-		"chars": {
-			"import": "./lib/chars/index.js"
 		},
 		"./package.json": "./package.json"
 	},

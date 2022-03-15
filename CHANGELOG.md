@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.0.3
+
+### Patch Changes
+
+- extracted @ctx-core/chars
+
 ## 10.0.2
 
 ### Patch Changes
