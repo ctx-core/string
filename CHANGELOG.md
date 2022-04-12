@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.0.5
+
+### Patch Changes
+
+- fix: @ctx-core/\* dependencies
+
 ## 10.0.4
 
 ### Patch Changes
