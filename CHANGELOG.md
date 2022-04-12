@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 10.0.4
+
+### Patch Changes
+
+- package.json: exports: update
+- Updated dependencies
+  - @ctx-core/function@20.6.1
+
 ## 10.0.3
 
 ### Patch Changes

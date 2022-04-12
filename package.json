@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "10.0.3",
+	"version": "10.0.4",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -19,9 +19,7 @@
 	"type": "module",
 	"types": "./lib/index.d.ts",
 	"exports": {
-		".": {
-			"import": "./lib/index.js"
-		},
+		".": "./lib/index.js",
 		"./package.json": "./package.json"
 	},
 	"scripts": {
@@ -35,7 +33,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/function": "^20.6.0"
+		"@ctx-core/function": "workspace:^20.6.1"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.57",
