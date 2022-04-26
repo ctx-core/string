@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.0.7
+
+### Patch Changes
+
+- @ctx-core/array: 26.2.0
+
 ## 10.0.6
 
 ### Patch Changes
