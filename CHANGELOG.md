@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.1.0
+
+### Minor Changes
+
+- feat: + table*txt*,table*txt\_\_str_aa_num_a_pair*
+
 ## 10.0.9
 
 ### Patch Changes

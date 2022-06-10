@@ -1,7 +1,7 @@
-export function indentation_(indent_count:number, indent = '	') {
+export function indentation_(indent_count, indent = '	') {
 	return new Array(indent_count + 1).join(indent)
 }
-export function indentation_regexp_(spaces:number) {
+export function indentation_regexp_(spaces) {
 	const regexpSource = '^' + indentation_(spaces)
 	return new RegExp(regexpSource, 'gm')
 }

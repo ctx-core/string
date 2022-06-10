@@ -1,6 +1,6 @@
 import { wrap_a_ } from '@ctx-core/function'
-export function case_insensitive_eql(a_unwrap:string[]) {
-	const value_a = wrap_a_<string>(a_unwrap)
+export function case_insensitive_eql(a_unwrap) {
+	const value_a = wrap_a_(a_unwrap)
 	let current_value = value_a[0]?.toString()?.toLowerCase()
 	for (let i = 1; i < value_a.length; i++) {
 		const value = value_a[i]?.toString()?.toLowerCase()
