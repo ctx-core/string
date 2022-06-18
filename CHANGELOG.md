@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.1.2
+
+### Patch Changes
+
+- @ctx-core/number: 8.2.1
+
 ## 10.1.1
 
 ### Patch Changes
