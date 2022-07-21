@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.1.4
+
+### Patch Changes
+
+- @ctx-core/function: 20.9.1
+
 ## 10.1.3
 
 ### Patch Changes
