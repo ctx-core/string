@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.1.9
+
+### Patch Changes
+
+- isNumber\_ instead of isNumber
+
 ## 10.1.8
 
 ### Patch Changes
