@@ -34,7 +34,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/function": "^21.4.0",
-		"@ctx-core/number": "^8.5.0"
+		"@ctx-core/number": "^8.5.1"
 	},
 	"devDependencies": {
 		"c8": "^7.12.0",
