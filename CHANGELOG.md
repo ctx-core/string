@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.1.11
+
+### Patch Changes
+
+- tslib: ^2.4.1 -> ^2.5.0
+
 ## 10.1.10
 
 ### Patch Changes
