@@ -1,5 +1,14 @@
 # @ctx-core/string
 
+## 10.1.12
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+- Updated dependencies
+  - @ctx-core/function@21.6.1
+  - @ctx-core/number@8.6.1
+
 ## 10.1.11
 
 ### Patch Changes
