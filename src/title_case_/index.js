@@ -1,5 +1,14 @@
 export function title_case_(str) {
-	const title_case = str == null ? '' : str.toString().replace(/\w\S*/g, (txt)=>txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
+	const title_case =
+		str == null
+		? ''
+		: str
+			.toString()
+			.replace(
+				/\w\S*/g,
+				txt=>
+					txt.charAt(0).toUpperCase()
+					+ txt.slice(1).toLowerCase())
 	return title_case
 }
 export {

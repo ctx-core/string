@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 10.2.0
+
+### Minor Changes
+
+- extract _.js & _.d.ts into directories
+
 ## 10.1.12
 
 ### Patch Changes

@@ -1,4 +1,4 @@
-export declare function indentation_(indent_count:number, indent?:string):string;
+export declare function indentation_(indent_count:number, indent?:string):string
 export declare function indentation_regexp_(spaces:number):RegExp;
 export {
 	indentation_ as _indentation,

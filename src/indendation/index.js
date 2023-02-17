@@ -1,6 +1,15 @@
+/**
+ * @param indent_count{number}
+ * @param indent{string}
+ * @returns {string}
+ */
 export function indentation_(indent_count, indent = '	') {
 	return new Array(indent_count + 1).join(indent)
 }
+/**
+ * @param spaces{number}
+ * @returns {RegExp}
+ */
 export function indentation_regexp_(spaces) {
 	const regexpSource = '^' + indentation_(spaces)
 	return new RegExp(regexpSource, 'gm')

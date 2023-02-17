@@ -1,5 +1,9 @@
-import { rPad } from '../rPad.js'
 import { isNumber_ } from '@ctx-core/number'
+import { rPad } from '../rPad/index.js'
+/**
+ * @param aa{string[][]}
+ * @returns {string}
+ */
 export function table_txt_(aa) {
 	const str_aa_num_a_pair = table_txt__str_aa_num_a_pair_(aa)
 	return str_aa_num_a_pair[0].map(a=>
@@ -9,6 +13,10 @@ export function table_txt_(aa) {
 					 : rPad($i, ' ', str_aa_num_a_pair[1][i] + 2), '')
 	).join('\n')
 }
+/**
+ * @param aa{string[][]}
+ * @returns {[string[][], number[]]}
+ */
 export function table_txt__str_aa_num_a_pair_(aa) {
 	return aa.reduce((str_aa_num_a_pair, a)=>{
 		str_aa_num_a_pair[0].push(a)
