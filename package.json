@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "10.2.3",
+	"version": "10.2.4",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -33,7 +33,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/function": "^21.7.2",
+		"@ctx-core/function": "^21.8.0",
 		"@ctx-core/number": "^8.6.1"
 	},
 	"devDependencies": {
