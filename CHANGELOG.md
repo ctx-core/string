@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 10.2.6
+
+### Patch Changes
+
+- @ctx-core/function: ^21.9.0 -> ^21.10.0
+- Updated dependencies
+  - @ctx-core/function@21.10.1
+
 ## 10.2.5
 
 ### Patch Changes
