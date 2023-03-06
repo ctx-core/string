@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "10.2.7",
+	"version": "10.2.8",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -34,7 +34,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/function": "^21.11.0",
-		"@ctx-core/number": "^8.6.1"
+		"@ctx-core/number": "^8.6.2"
 	},
 	"devDependencies": {
 		"c8": "^7.13.0",
