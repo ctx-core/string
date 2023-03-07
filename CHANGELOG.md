@@ -1,5 +1,12 @@
 # @ctx-core/string
 
+## 10.4.0
+
+### Minor Changes
+
+- - line_iterator\_\_readable_reader_T: ReadableStream|ReadableStreamDefaultReader|ReadableStreamBYOBReader
+- line*iterator*: argument: reader=>readable_stream_or_reader: line_iterator\_\_readable_reader_T
+
 ## 10.3.0
 
 ### Minor Changes
