@@ -1,4 +1,5 @@
 export declare function line_iterator_(
-	readable:ReadableStreamDefaultReader<string>,
+	readable_stream_or_reader:line_iterator__readable_reader_T,
 	text_decoder?:TextDecoder
 ):Iterable<string>
+export type line_iterator__readable_reader_T = ReadableStream|ReadableStreamDefaultReader|ReadableStreamBYOBReader
