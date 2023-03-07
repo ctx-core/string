@@ -1,5 +1,16 @@
 # @ctx-core/string
 
+## 10.3.0
+
+### Minor Changes
+
+- - line*iterator*
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/function@21.12.1
+
 ## 10.2.9
 
 ### Patch Changes
