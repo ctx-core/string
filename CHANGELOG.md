@@ -1,5 +1,12 @@
 # @ctx-core/string
 
+## 10.5.0
+
+### Minor Changes
+
+- line*iterator*: + optional cb argument: a cb will make line*iterator* invoke the cb instead of yield
+- - readable_reader_T: aliased by line_iterator\_\_readable_reader_T
+
 ## 10.4.0
 
 ### Minor Changes

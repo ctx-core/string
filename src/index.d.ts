@@ -1,3 +1,4 @@
+export * from './_types'
 export * from './acronym_'
 export * from './title_case_'
 export * from './case_insensitive_eql'

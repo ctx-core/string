@@ -1,0 +1,2 @@
+export type readable_reader_T = ReadableStream|ReadableStreamDefaultReader|ReadableStreamBYOBReader
+export declare type line_iterator__readable_reader_T = readable_reader_T

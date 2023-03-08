@@ -1,22 +1,40 @@
+/** @typedef {import('../_types').readable_reader_T}readable_reader_T */
+/** @typedef {import('./index.d.ts').line_iterator__cb}line_iterator__cb */
 /**
- * @param {import('./index.d.ts').line_iterator__readable_reader_T}readable
+ * @param {line_iterator__cb|readable_reader_T}cb_or_readable_stream_or_reader
+ * @param {readable_reader_T|TextDecoder}[readable_stream_or_reader_or_text_decoder]
  * @param {TextDecoder}[text_decoder]
- * @returns {Iterable<string>}
+ * @returns {Iterable<string|void>}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader/read#example_2_-_handling_text_line_by_line}
  * @private
  */
 export async function* line_iterator_(
-	readable_stream_or_reader,
-	text_decoder = new TextDecoder('utf-8')
+	cb_or_readable_stream_or_reader,
+	readable_stream_or_reader_or_text_decoder,
+	text_decoder
 ) {
+	const cb =
+		typeof cb_or_readable_stream_or_reader === 'function'
+		? cb_or_readable_stream_or_reader
+		: null
+	/** @type {readable_reader_T} */
+	const readable_stream_or_reader =
+		cb
+		? readable_stream_or_reader_or_text_decoder
+		: cb_or_readable_stream_or_reader
+	if (!cb) text_decoder = readable_stream_or_reader_or_text_decoder
+	if (!text_decoder) text_decoder = new TextDecoder('utf-8')
 	/** @type {ReadableStreamDefaultReader|ReadableStreamBYOBReader} */
 	const reader =
-		readable_stream_or_reader.getReader
-		? readable_stream_or_reader.getReader()
+		(/** @type {ReadableStream} */readable_stream_or_reader).getReader
+		? (/** @type {ReadableStream} */readable_stream_or_reader).getReader()
 		: readable_stream_or_reader
-	let { value: chunk, done: readerDone } = await reader.read()
+	let {
+		value: chunk,
+		done: readerDone
+	} = await reader.read()
 	chunk = chunk ? text_decoder.decode(chunk, { stream: true }) : ''
-	let re = /\r\n|\n|\r/gm
+	const re = /\r\n|\n|\r/gm
 	let startIndex = 0
 	for (; ;) {
 		let result = re.exec(chunk)
@@ -31,11 +49,21 @@ export async function* line_iterator_(
 			startIndex = re.lastIndex = 0
 			continue
 		}
-		yield chunk.substring(startIndex, result.index)
+		const line = chunk.substring(startIndex, result.index)
+		if (cb) {
+			cb(line)
+		} else {
+			yield line
+		}
 		startIndex = re.lastIndex
 	}
 	if (startIndex < chunk.length) {
 		// last line didn't end in a newline char
-		yield chunk.slice(startIndex)
+		let line = chunk.slice(startIndex)
+		if (cb) {
+			cb(line)
+		} else {
+			yield line
+		}
 	}
 }
