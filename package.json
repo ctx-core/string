@@ -37,6 +37,7 @@
 		"@ctx-core/number": "^8.6.2"
 	},
 	"devDependencies": {
+		"@types/node": "^18.14.6",
 		"c8": "^7.13.0",
 		"check-dts": "^0.7.0",
 		"tslib": "^2.5.0",
