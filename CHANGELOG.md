@@ -1,5 +1,20 @@
 # @ctx-core/string
 
+## 12.0.0
+
+### Major Changes
+
+- line**parse: argument: text_decoder=>params:+ line**parse\_\_params_T
+
+### Minor Changes
+
+- - line**parse**params_T:
+
+    include_line_separator?:boolean
+    text_decoder?:TextDecoder
+
+- line\_\_parse: params: + include_line_separator
+
 ## 11.0.0
 
 ### Major Changes
