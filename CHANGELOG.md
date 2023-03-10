@@ -1,5 +1,22 @@
 # @ctx-core/string
 
+## 11.0.0
+
+### Major Changes
+
+- line\_\_parse:
+
+  return type:
+  !on_line: fix: AsyncIterable<string>
+  on_line: void
+
+- - line_iterator\_\_cb
+
+### Minor Changes
+
+- - readable_stream_or_reader_T: aliased by readable_reader_T
+- - line_iterator\_\_on_line_T
+
 ## 10.5.0
 
 ### Minor Changes
