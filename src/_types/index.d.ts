@@ -1,7 +1,6 @@
-import type { ReadableStream as node_ReadableStream } from 'stream/web'
-export type readable_reader_T =
-	ReadableStream
-	|node_ReadableStream
+export type readable_stream_or_reader_T =
+	{ getReader():ReadableStreamDefaultReader<any> }
 	|ReadableStreamDefaultReader
 	|ReadableStreamBYOBReader
-export declare type line_iterator__readable_reader_T = readable_reader_T
+export declare type readable_reader_T = readable_stream_or_reader_T
+export declare type line_iterator__readable_reader_T = readable_stream_or_reader_T

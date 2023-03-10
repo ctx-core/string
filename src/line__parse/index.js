@@ -1,32 +1,32 @@
-/** @typedef {import('../_types').readable_reader_T}readable_reader_T */
-/** @typedef {import('./index.d.ts').line_iterator__cb}line_iterator__cb */
+/** @typedef {import('../_types').readable_stream_or_reader_T}readable_stream_or_reader_T */
+/** @typedef {import('./index.d.ts').line_iterator__on_line_T}line_iterator__on_line */
 /**
- * @param {line_iterator__cb|readable_reader_T}cb_or_readable_stream_or_reader
- * @param {readable_reader_T|TextDecoder}[readable_stream_or_reader_or_text_decoder]
+ * @param {line_iterator__on_line|readable_stream_or_reader_T}on_line_or_readable_stream_or_reader
+ * @param {readable_stream_or_reader_T|TextDecoder}[readable_stream_or_reader_or_text_decoder]
  * @param {TextDecoder}[text_decoder]
- * @returns {Iterable<string|void>}
+ * @returns {void|AsyncIterable<string>}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader/read#example_2_-_handling_text_line_by_line}
  * @private
  */
 export function line__parse(
-	cb_or_readable_stream_or_reader,
+	on_line_or_readable_stream_or_reader,
 	readable_stream_or_reader_or_text_decoder,
 	text_decoder
 ) {
-	const cb =
-		typeof cb_or_readable_stream_or_reader === 'function'
-		? cb_or_readable_stream_or_reader
+	const on_line =
+		typeof on_line_or_readable_stream_or_reader === 'function'
+		? on_line_or_readable_stream_or_reader
 		: null
-	/** @type {readable_reader_T} */
+	/** @type {readable_stream_or_reader_T} */
 	const readable_stream_or_reader =
-		cb
+		on_line
 		? readable_stream_or_reader_or_text_decoder
-		: cb_or_readable_stream_or_reader
-	if (!cb) text_decoder = readable_stream_or_reader_or_text_decoder
+		: on_line_or_readable_stream_or_reader
+	if (!on_line) text_decoder = readable_stream_or_reader_or_text_decoder
 	if (!text_decoder) text_decoder = new TextDecoder('utf-8')
 	return (
-		cb
-		? line__parse__iterator_().next()
+		on_line
+		? line__parse__iterator_().next().then($=>$.value)
 		: line__parse__iterator_())
 	async function* line__parse__iterator_() {
 		/** @type {ReadableStreamDefaultReader|ReadableStreamBYOBReader} */
@@ -55,8 +55,8 @@ export function line__parse(
 				continue
 			}
 			const line = chunk.substring(startIndex, result.index)
-			if (cb) {
-				cb(line)
+			if (on_line) {
+				on_line(line)
 			} else {
 				yield line
 			}
@@ -65,8 +65,8 @@ export function line__parse(
 		if (startIndex < chunk.length) {
 			// last line didn't end in a newline char
 			let line = chunk.slice(startIndex)
-			if (cb) {
-				cb(line)
+			if (on_line) {
+				on_line(line)
 			} else {
 				yield line
 			}

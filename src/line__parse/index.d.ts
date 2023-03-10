@@ -1,14 +1,14 @@
-import type { readable_reader_T } from '../_types'
+import type { readable_stream_or_reader_T } from '../_types'
 export declare function line__parse(
-	readable_stream_or_reader:readable_reader_T,
+	readable_stream_or_reader:readable_stream_or_reader_T,
 	text_decoder?:TextDecoder
-):Iterable<string>
+):AsyncIterable<string>
 export declare function line__parse(
-	cb:line_iterator__cb,
-	readable_stream_or_reader:readable_reader_T,
+	on_line:line_iterator__on_line_T,
+	readable_stream_or_reader:readable_stream_or_reader_T,
 	text_decoder?:TextDecoder
-):Iterable<void>
+):void
 export {
 	line__parse as line_iterator_,
 }
-export type line_iterator__cb = (line:string)=>any
+export type line_iterator__on_line_T = (line:string)=>any
