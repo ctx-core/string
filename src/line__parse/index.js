@@ -62,7 +62,7 @@ export function line__parse(
 			}
 			const line = chunk.substring(
 				startIndex,
-				result.index + (include_line_separator ? 1 : 0))
+				result.index + (include_line_separator ? result[0].length : 0))
 			if (on_line) {
 				on_line(line)
 			} else {

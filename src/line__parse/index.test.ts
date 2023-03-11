@@ -21,8 +21,8 @@ test('line__parse|!include_line_separator|callback', async ()=>{
 test('line__parse|include_line_separator|callback', async ()=>{
 	const readable = new Readable()
 	readable.push('foo\n')
-	readable.push('bar baz\n')
-	readable.push('\n')
+	readable.push('bar baz\r\n')
+	readable.push('quux\r')
 	readable.push(null)
 	const line_a:string[] = []
 	await line__parse(
@@ -31,8 +31,8 @@ test('line__parse|include_line_separator|callback', async ()=>{
 		{ include_line_separator: true })
 	equal(line_a, [
 		'foo\n',
-		'bar baz\n',
-		'\n',
+		'bar baz\r\n',
+		'quux\r',
 	])
 })
 test('line__parse|!include_line_separator|iterator', async ()=>{

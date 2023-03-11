@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 12.0.1
+
+### Patch Changes
+
+- line\_\_parse: include_line_separator: fix: line separators with multiple characters: \r\n
+
 ## 12.0.0
 
 ### Major Changes
