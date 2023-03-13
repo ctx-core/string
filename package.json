@@ -37,11 +37,11 @@
 		"@ctx-core/number": "^8.6.2"
 	},
 	"devDependencies": {
-		"@types/node": "^18.15.0",
+		"@types/node": "^18.15.2",
 		"c8": "^7.13.0",
-		"check-dts": "^0.7.0",
+		"check-dts": "^0.7.1",
 		"tslib": "^2.5.0",
-		"tsx": "^3.12.4",
+		"tsx": "^3.12.5",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},
