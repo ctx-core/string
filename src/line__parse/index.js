@@ -1,9 +1,9 @@
-/** @typedef {import('../_types').readable_stream_or_reader_T}readable_stream_or_reader_T */
+/** @typedef {import('../_types').readable_stream_OR_reader_T}readable_stream_OR_reader_T */
 /** @typedef {import('./index.d.ts').line_iterator__on_line_T}line_iterator__on_line */
 /** @typedef {import('./index.d.ts').line__parse__params_T}line__parse__params_T */
 /**
- * @param {line_iterator__on_line|readable_stream_or_reader_T}on_line_or_readable_stream_or_reader
- * @param {readable_stream_or_reader_T|line__parse__params_T}[readable_stream_or_reader_or_params]
+ * @param {line_iterator__on_line|readable_stream_OR_reader_T}on_line_or_readable_stream_or_reader
+ * @param {readable_stream_OR_reader_T|line__parse__params_T}[readable_stream_or_reader_or_params]
  * @param {line__parse__params_T}[params]
  * @returns {void|AsyncIterable<string>}
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader/read#example_2_-_handling_text_line_by_line}
@@ -18,7 +18,7 @@ export function line__parse(
 		typeof on_line_or_readable_stream_or_reader === 'function'
 		? on_line_or_readable_stream_or_reader
 		: null
-	/** @type {readable_stream_or_reader_T} */
+	/** @type {readable_stream_OR_reader_T} */
 	const readable_stream_or_reader =
 		on_line
 		? readable_stream_or_reader_or_params

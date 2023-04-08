@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 12.1.0
+
+### Minor Changes
+
+- - readable_stream_OR_reader_T: aliased by readable_stream_or_reader_T
+
 ## 12.0.9
 
 ### Patch Changes
