@@ -1,6 +1,7 @@
 /** @typedef {import('../_types').readable_stream_OR_reader_T}readable_stream_OR_reader_T */
 /** @typedef {import('./index.d.ts').line_iterator__on_line_T}line_iterator__on_line */
 /** @typedef {import('./index.d.ts').line__parse__params_T}line__parse__params_T */
+import { line__transform_stream_ } from '../line__transform_stream_/index.js'
 /**
  * @param {line_iterator__on_line|readable_stream_OR_reader_T}on_line_or_readable_stream_or_reader
  * @param {readable_stream_OR_reader_T|line__parse__params_T}[readable_stream_or_reader_or_params]
@@ -44,7 +45,12 @@ export function line__parse(
 			value: chunk,
 			done: readerDone
 		} = await reader.read()
-		chunk = chunk ? text_decoder.decode(chunk, { stream: true }) : ''
+		chunk =
+			chunk
+			? chunk.byteLength
+			  ? text_decoder.decode(chunk, { stream: true })
+			  : chunk
+			: ''
 		const re = /\r\n|\n|\r/gm
 		let startIndex = 0
 		for (; ;) {
@@ -56,7 +62,13 @@ export function line__parse(
 				let remainder = chunk.substring(startIndex);
 				({ value: chunk, done: readerDone } = await reader.read())
 				chunk =
-					remainder + (chunk ? text_decoder.decode(chunk, { stream: true }) : '')
+					remainder
+					+ (
+						chunk
+						? chunk.byteLength
+						  ? text_decoder.decode(chunk, { stream: true })
+						  : chunk
+						: '')
 				startIndex = re.lastIndex = 0
 				continue
 			}

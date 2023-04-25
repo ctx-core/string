@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 12.2.0
+
+### Minor Changes
+
+- - line\__transform_stream_
+
 ## 12.1.19
 
 ### Patch Changes
