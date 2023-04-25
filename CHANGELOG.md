@@ -1,5 +1,12 @@
 # @ctx-core/string
 
+## 12.3.0
+
+### Minor Changes
+
+- line\__transform_stream_: arguments: + params:line\_\_transform_stream\_\_\_params_T: - include_line_separator?:boolean
+- - line\_\_transform_stream\*\*\*params_T
+
 ## 12.2.0
 
 ### Minor Changes

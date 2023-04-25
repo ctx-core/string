@@ -1,13 +1,13 @@
-import { start } from 'repl'
+/** @typedef {import('./index.d.ts').line__transform_stream___params_T}line__transform_stream___params_T */
 /**
- * @param {boolean}[include_line_separator]
+ * @param {line__transform_stream___params_T}[params]
  * @param {QueuingStrategy<string>}[writable_strategy]
  * @param {QueuingStrategy<string>}[readable_strategy]
  * @returns {TransformStream<string, string>}
  * @private
  */
 export function line__transform_stream_(
-	include_line_separator,
+	params = {},
 	writable_strategy,
 	readable_strategy,
 ) {
@@ -35,7 +35,7 @@ export function line__transform_stream_(
 						chunk.substring(
 							startIndex,
 							result.index
-							+ (include_line_separator ? result[0].length : 0))
+							+ (params.include_line_separator ? result[0].length : 0))
 					controller.enqueue(line)
 					startIndex = re.lastIndex
 				}
