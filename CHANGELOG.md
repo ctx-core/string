@@ -1,5 +1,12 @@
 # @ctx-core/string
 
+## 12.3.9
+
+### Patch Changes
+
+- @types/node: ^20.5.0 -> ^20.5.1
+- tslib: ^2.6.1 -> ^2.6.2
+
 ## 12.3.8
 
 ### Patch Changes
