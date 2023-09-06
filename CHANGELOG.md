@@ -1,5 +1,14 @@
 # @ctx-core/string
 
+## 12.3.13
+
+### Patch Changes
+
+- version bump
+- Updated dependencies
+  - @ctx-core/function@21.20.1
+  - @ctx-core/number@8.6.23
+
 ## 12.3.12
 
 ### Patch Changes
