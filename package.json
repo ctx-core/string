@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "12.3.17",
+	"version": "12.3.18",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -37,7 +37,7 @@
 		"@ctx-core/number": "^8.6.23"
 	},
 	"devDependencies": {
-		"@types/node": "^20.8.0",
+		"@types/node": "^20.8.2",
 		"c8": "^8.0.1",
 		"check-dts": "^0.7.2",
 		"tslib": "^2.6.2",
