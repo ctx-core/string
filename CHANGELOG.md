@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 12.3.21
+
+### Patch Changes
+
+- @types/node: ^20.8.4 -> ^20.8.5
+
 ## 12.3.20
 
 ### Patch Changes
