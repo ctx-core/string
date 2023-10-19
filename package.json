@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/string",
-	"version": "12.3.22",
+	"version": "12.3.23",
 	"description": "ctx-core string",
 	"keywords": [
 		"ctx-core",
@@ -33,15 +33,15 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/function": "^21.20.1",
-		"@ctx-core/number": "^8.6.23"
+		"@ctx-core/function": "^21.20.2",
+		"@ctx-core/number": "^8.6.24"
 	},
 	"devDependencies": {
-		"@types/node": "^20.8.6",
+		"@types/node": "^20.8.7",
 		"c8": "^8.0.1",
 		"check-dts": "^0.7.2",
 		"tslib": "^2.6.2",
-		"tsx": "^3.13.0",
+		"tsx": "^3.14.0",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},

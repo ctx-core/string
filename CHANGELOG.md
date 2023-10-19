@@ -1,5 +1,15 @@
 # @ctx-core/string
 
+## 12.3.23
+
+### Patch Changes
+
+- tsx: ^3.13.0 -> ^3.14.0
+- @types/node: ^20.8.6 -> ^20.8.7
+- Updated dependencies
+  - @ctx-core/function@21.20.2
+  - @ctx-core/number@8.6.24
+
 ## 12.3.22
 
 ### Patch Changes
