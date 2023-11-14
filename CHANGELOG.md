@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 12.4.3
+
+### Patch Changes
+
+- package.json: files: + \*.js
+- Updated dependencies
+  - ctx-core@2.2.2
+
 ## 12.4.2
 
 ### Patch Changes
