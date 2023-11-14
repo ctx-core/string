@@ -1,5 +1,15 @@
 # @ctx-core/string
 
+## 12.4.4
+
+### Patch Changes
+
+- package.json: files:
+
+      *.d.ts
+      *.js
+      *.json
+
 ## 12.4.3
 
 ### Patch Changes
