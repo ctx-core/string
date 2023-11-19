@@ -1,5 +1,17 @@
 # @ctx-core/string
 
+## 12.4.17
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@4.0.0
+
 ## 12.4.16
 
 ### Patch Changes
