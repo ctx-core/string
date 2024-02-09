@@ -1,5 +1,12 @@
 # @ctx-core/string
 
+## 12.4.130
+
+### Patch Changes
+
+- Updated dependencies
+  - ctx-core@6.0.0
+
 ## 12.4.129
 
 ### Patch Changes
