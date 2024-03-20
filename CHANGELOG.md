@@ -1,5 +1,13 @@
 # @ctx-core/string
 
+## 12.4.156
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+
 ## 12.4.155
 
 ### Patch Changes
