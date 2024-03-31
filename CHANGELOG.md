@@ -1,5 +1,11 @@
 # @ctx-core/string
 
+## 12.4.163
+
+### Patch Changes
+
+- ctx-core: ^6.8.2 -> ^6.8.3
+
 ## 12.4.162
 
 ### Patch Changes
